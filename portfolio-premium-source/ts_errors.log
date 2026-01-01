@@ -1,0 +1,1 @@
+components/contact-form.tsx(10,21): error TS2307: Cannot find module '@emailjs/browser' or its corresponding type declarations.

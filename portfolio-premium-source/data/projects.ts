@@ -1,0 +1,62 @@
+export const projects = [
+    {
+        title: "Sodercan - Plataforma de Ayudas",
+        slug: "sodercan-ayudas",
+        description: "Plataforma oficial de gestión de ayudas del Gobierno de Cantabria. Desarrollo Full Stack crítico para el ciudadano.",
+        coverImage: "/projects/sodercan.jpg",
+        tags: ["Angular", "Java", "Spring Boot", "Oracle", "PrimeNG"],
+        category: "Corporativo",
+        year: "2024-2025",
+        problem: "La gestión de ayudas requería un sistema robusto, seguro y capaz de gestionar alto tráfico y validaciones complejas de documentación.",
+        solution: "Desarrollo de módulos clave con validaciones dinámicas, integración con backend corporativo y optimización de consultas Oracle.",
+        result: "Sistema en producción gestionando miles de solicitudes reales con estabilidad total.",
+        features: ["Formularios Dinámicos", "Validación Documental", "Alto Tráfico", "Seguridad"],
+        repoUrl: "https://ayudas.sodercan.es/ayudas",
+        demoUrl: "https://ayudas.sodercan.es/ayudas"
+    },
+    {
+        title: "SP Basket Pioneers",
+        slug: "sp-basket-pioneers",
+        description: "Web completa para escuela de baloncesto inclusiva, facilitando la gestión de eventos y visibilidad.",
+        coverImage: "/projects/basket.jpg",
+        tags: ["Angular", "HTML/CSS", "TypeScript", "UX/UI"],
+        category: "Web",
+        year: "2023 - Presente",
+        problem: "La escuela necesitaba presencia digital para coordinar eventos y atraer nuevos miembros.",
+        solution: "Desarrollo y mantenimiento continuo del portal web, asegurando accesibilidad y facilidad de uso.",
+        result: "Mejora en la comunicación con las familias y gestión eficiente de eventos.",
+        features: ["Diseño Inclusivo", "Gestión de Eventos", "Responsive", "SEO"],
+        repoUrl: "#",
+        demoUrl: "#"
+    },
+    {
+        title: "SkyBlock - Arquimea",
+        slug: "skyblock-arquimea",
+        description: "Sistema de defensa anti-drones portátil. Interfaz y control para hardware de alta tecnología.",
+        coverImage: "/projects/skyblock.jpg",
+        tags: ["RF Engineering", "Integration", "Testing", "Hardware"],
+        category: "Tecnología",
+        year: "2023",
+        problem: "Necesidad de validar funcionalmente un sistema complejo de jamming en campo.",
+        solution: "Diseño, ensamblaje y validación funcional del sistema, integrando electrónica y RF.",
+        result: "Producto validado y operativo para neutralización de amenazas.",
+        features: ["Control RF", "Jamming", "Sistemas Embebidos", "Validación de Campo"],
+        repoUrl: "#",
+        demoUrl: "#"
+    },
+    {
+        title: "EcoFin Dashboard",
+        slug: "ecofin-dashboard",
+        description: "Dashboard financiero.",
+        coverImage: "/ui-bg.png",
+        tags: ["React", "D3.js", "Next.js"],
+        category: "Panel de Datos",
+        year: "2023",
+        problem: "Visualización de datos complejos de forma intuitiva.",
+        solution: "Interfaz de alto rendimiento con gráficos interactivos.",
+        result: "Mejora en la toma de decisiones basada en datos.",
+        features: ["Analytics", "Real-time", "Dark Mode"],
+        repoUrl: "https://github.com/pablomtecnologia",
+        demoUrl: "/"
+    }
+]

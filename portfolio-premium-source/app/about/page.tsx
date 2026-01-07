@@ -7,6 +7,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { Download } from "lucide-react"
+import { EducationSection } from "@/components/sections/education"
+import { TimelineSection } from "@/components/sections/timeline"
 
 export default function AboutPage() {
     return (
@@ -92,6 +94,11 @@ export default function AboutPage() {
                         </Card>
                     ))}
                 </div>
+            </div>
+
+            <div className="my-20 space-y-20">
+                <TimelineSection />
+                <EducationSection />
             </div>
         </div>
     )

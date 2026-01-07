@@ -23,8 +23,8 @@ export const profile = {
     ],
     skills: [
         { category: "Frontend", tags: ["Angular 17+", "React 18", "TypeScript", "TailwindCSS", "PrimeNG", "Material UI"] },
-        { category: "Backend", tags: ["Java 22", "Spring Boot 3", "Hibernate/JPA", "Node.js", "Express", "REST APIs"] },
-        { category: "Base de Datos", tags: ["PostgreSQL", "Oracle", "SQL"] },
+        { category: "Backend", tags: ["Java 22", "Spring Boot 3", ".NET Core", "C#", "Python", "Hibernate/JPA", "Node.js", "Express"] },
+        { category: "Base de Datos", tags: ["PostgreSQL", "Oracle", "SQL Server", "MySQL", "MongoDB", "SQL"] },
         { category: "DevOps & Herramientas", tags: ["Docker", "GitLab CI/CD", "SonarQube", "JIRA", "Git"] },
         { category: "Ingeniería", tags: ["LabVIEW", "C++", "Python", "RF Testing", "Electrónica"] }
     ],
@@ -72,19 +72,28 @@ export const profile = {
     ],
     education: [
         {
-            degree: "Ingeniería Electrónica Industrial (Cursando)",
-            school: "Universidad de Cantabria",
-            year: "Actualidad"
-        },
-        {
             degree: "Desarrollo de Aplicaciones Multiplataforma (DAM)",
             school: "IES Augusto González de Linares",
-            year: "2023 (Primer Clasificado)"
+            year: "09/2024 – 06/2026",
+            location: "Peñacastillo, Cantabria"
         },
         {
             degree: "Mantenimiento Electrónico",
-            school: "CIFP Nº1",
-            year: "2021-2023"
+            school: "Centro Integrado de Formación Profesional nº1",
+            year: "09/2021 – 06/2023",
+            location: "Peñacastillo, Cantabria"
+        },
+        {
+            degree: "Ingeniería Electrónica Industrial y Automática (Cursando)",
+            school: "Universidad de Cantabria",
+            year: "Actualidad",
+            location: "Santander, Cantabria"
+        },
+        {
+            degree: "Grado Elemental de Música - Piano",
+            school: "Conservatorio Jesús de Monasterio",
+            year: "09/2016 – 06/2022",
+            location: "Santander, Cantabria"
         }
     ],
     services: [

@@ -116,11 +116,11 @@
 
   body {
     @apply bg-background text-foreground;
-    /* Subtle Engineering Grid Background */
-    background-image: radial-gradient(var(--foreground) 1px, transparent 1px);
-    background-size: 24px 24px;
+    /* Peaceful Soft Background */
+    background: linear-gradient(to bottom right, #f8f9fa, #e9ecef);
+    background-attachment: fixed;
     background-position: 0 0;
-    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+
     opacity: 1;
   }
 

@@ -1,6 +1,5 @@
 import { HeroSection } from "@/components/sections/hero"
 import { SocialProof } from "@/components/sections/social-proof"
-import { TimelineSection } from "@/components/sections/timeline"
 import { SkillsSection } from "@/components/sections/skills"
 import { ServicesSection } from "@/components/sections/services"
 import { FeaturedProjects } from "@/components/sections/featured-projects"
@@ -17,7 +16,6 @@ export default function Home() {
       <ServicesSection />
       <ProcessSection />
       <SkillsSection />
-      <TimelineSection />
     </>
   )
 }

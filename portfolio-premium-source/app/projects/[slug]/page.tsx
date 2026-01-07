@@ -65,23 +65,18 @@ export default async function ProjectPage({
                 <div className="space-y-8">
                     <div className="rounded-xl border bg-card text-card-foreground shadow-sm p-6 space-y-6">
                         <div>
-                            <h4 className="font-semibold mb-2">Links</h4>
+                            <h4 className="font-semibold mb-2">Enlaces</h4>
                             <div className="flex flex-col gap-2">
                                 <Button asChild className="w-full">
                                     <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
-                                        Ver Demo <ExternalLink className="ml-2 h-4 w-4" />
-                                    </a>
-                                </Button>
-                                <Button variant="outline" asChild className="w-full">
-                                    <a href={project.repoUrl} target="_blank" rel="noopener noreferrer">
-                                        Ver Código <Github className="ml-2 h-4 w-4" />
+                                        Acceder al Proyecto <ExternalLink className="ml-2 h-4 w-4" />
                                     </a>
                                 </Button>
                             </div>
                         </div>
 
                         <div>
-                            <h4 className="font-semibold mb-2">Stack</h4>
+                            <h4 className="font-semibold mb-2">Tecnologías</h4>
                             <div className="flex flex-wrap gap-2">
                                 {project.tags.map(tag => (
                                     <Badge key={tag} variant="secondary">{tag}</Badge>
@@ -90,7 +85,7 @@ export default async function ProjectPage({
                         </div>
 
                         <div>
-                            <h4 className="font-semibold mb-2">Features</h4>
+                            <h4 className="font-semibold mb-2">Funcionalidades</h4>
                             <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1">
                                 {project.features.map((feature, i) => (
                                     <li key={i}>{feature}</li>

@@ -15,19 +15,19 @@ export const projects = [
         demoUrl: "https://ayudas.sodercan.es/ayudas"
     },
     {
-        title: "SP Basket Pioneers",
-        slug: "sp-basket-pioneers",
-        description: "Web completa para escuela de baloncesto inclusiva, facilitando la gestión de eventos y visibilidad.",
+        title: "Saski Penguins (Spbasket)",
+        slug: "saski-penguins",
+        description: "Plataforma web oficial para el club Saski Penguins (Spbasket). Ofrece gestión integral de equipos, publicación de noticias, seguimiento de eventos y calendarios. Diseñada para conectar a familias, jugadores y entrenadores.",
         coverImage: "/projects/basket.jpg",
         tags: ["Angular", "HTML/CSS", "TypeScript", "UX/UI"],
         category: "Web",
         year: "2023 - Presente",
-        problem: "La escuela necesitaba presencia digital para coordinar eventos y atraer nuevos miembros.",
-        solution: "Desarrollo y mantenimiento continuo del portal web, asegurando accesibilidad y facilidad de uso.",
-        result: "Mejora en la comunicación con las familias y gestión eficiente de eventos.",
-        features: ["Diseño Inclusivo", "Gestión de Eventos", "Responsive", "SEO"],
+        problem: "Necesidad de una identidad digital unificada y un canal de comunicación efectivo para el club.",
+        solution: "Desarrollo de un portal web moderno, rápido y responsive que centraliza toda la información del club.",
+        result: "Publicado oficialmente en saskipenguins.es, mejorando la visibilidad y profesionalidad del club.",
+        features: ["Gestión de Equipos", "Noticias y Blog", "Calendario de Eventos", "Diseño Responsive"],
         repoUrl: "#",
-        demoUrl: "#"
+        demoUrl: "https://saskipenguins.es/"
     },
     {
         title: "SkyBlock - Arquimea",
@@ -42,21 +42,21 @@ export const projects = [
         result: "Producto validado y operativo para neutralización de amenazas.",
         features: ["Control RF", "Jamming", "Sistemas Embebidos", "Validación de Campo"],
         repoUrl: "#",
-        demoUrl: "#"
+        demoUrl: "https://www.arquimea.com/es/productos/skyblock-sistema-anti-dron/"
     },
     {
-        title: "EcoFin Dashboard",
-        slug: "ecofin-dashboard",
-        description: "Dashboard financiero.",
-        coverImage: "/ui-bg.png",
-        tags: ["React", "D3.js", "Next.js"],
-        category: "Panel de Datos",
-        year: "2023",
-        problem: "Visualización de datos complejos de forma intuitiva.",
-        solution: "Interfaz de alto rendimiento con gráficos interactivos.",
-        result: "Mejora en la toma de decisiones basada en datos.",
-        features: ["Analytics", "Real-time", "Dark Mode"],
-        repoUrl: "https://github.com/pablomtecnologia",
-        demoUrl: "/"
+        title: "Osakidetza - Servicio Vasco de Salud",
+        slug: "osakidetza-portal",
+        description: "Colaboración en el desarrollo y mantenimiento del portal web oficial y servicios digitales de salud de Osakidetza.",
+        coverImage: "/projects/osakidetza.jpg",
+        tags: ["Java", "Spring Boot", "Liferay", "Oracle", "Angular"],
+        category: "Sector Público",
+        year: "2024-2025",
+        problem: "Mantenimiento y evolución de una plataforma crítica de salud con millones de usuarios y alta disponibilidad.",
+        solution: "Desarrollo de nuevas funcionalidades, resolución de incidencias en producción y optimización de servicios backend.",
+        result: "Mejora continua en la accesibilidad y fiabilidad de los servicios digitales de salud para los ciudadanos.",
+        features: ["Gestión Citas", "Carpeta Salud", "Alta Disponibilidad", "Accesibilidad"],
+        repoUrl: "#",
+        demoUrl: "https://www.osakidetza.euskadi.eus/portada/"
     }
 ]

@@ -27,7 +27,7 @@ export function SocialProof() {
                     className="flex flex-col items-center justify-center text-center"
                 >
                     <span className="text-3xl font-bold md:text-4xl">100%</span>
-                    <span className="text-sm text-muted-foreground">Code Quality</span>
+                    <span className="text-sm text-muted-foreground">Calidad de Código</span>
                 </motion.div>
             </div>
         </section>

@@ -1,5 +1,3 @@
-"use client"
-
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -7,7 +5,6 @@ import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Loader2, CheckCircle, AlertCircle } from "lucide-react"
-import emailjs from '@emailjs/browser';
 
 export function ContactForm() {
     const [isLoading, setIsLoading] = useState(false)
@@ -18,25 +15,30 @@ export function ContactForm() {
         setIsLoading(true)
         setStatus("idle")
 
-        const form = e.currentTarget
+        const formData = new FormData(e.currentTarget)
+        const data = Object.fromEntries(formData.entries())
 
         try {
-            if (!process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID) {
-                await new Promise(resolve => setTimeout(resolve, 2000))
-                console.log("EmailJS keys missing - Simulating success")
-                setStatus("success")
-                form.reset()
-                return
-            }
+            const response = await fetch("https://formsubmit.co/ajax/pablomtecnologia@gmail.com", {
+                method: "POST",
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    name: data.user_name,
+                    email: data.user_email,
+                    subject: data.subject,
+                    message: data.message,
+                    _template: 'table', // Cleaner email format
+                    _subject: `Nuevo mensaje Portfolio: ${data.subject}`
+                })
+            })
 
-            await emailjs.sendForm(
-                process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-                process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
-                form,
-                process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
-            )
+            if (!response.ok) throw new Error("Error sending message")
+
             setStatus("success")
-            form.reset()
+            e.currentTarget.reset()
         } catch (error) {
             console.error(error)
             setStatus("error")
